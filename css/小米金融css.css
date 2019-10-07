@@ -1,0 +1,281 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+
+/* 所有容器统一宽度 */
+.containers {
+	width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+/* 头部start */
+header {
+	height: 40px;
+	background: black;
+}
+
+header li {
+	float: left;
+}
+
+/* 头部两个div左右浮动 */
+.header_left {
+	float: left;
+}
+
+.header_rigt {
+	float: right;
+}
+
+/* 头部 a  span*/
+header a {
+	color: white;
+	font-size: 12px;
+	line-height: 40px;
+}
+
+header a:hover {
+	color: #e5e5e5;
+}
+
+header span {
+	line-height: 40px;
+	font-size: 12px;
+	padding: 5px;
+	color: white;
+}
+
+/* 头部end */
+
+/* 网站导航 start */
+nav {
+	height: 100px;
+}
+
+/* nav .containers{
+	border: #000000 1px solid;
+} */
+
+.nav_left {
+	float: left;
+}
+
+.nav_left a {
+	display: block;
+	margin-top: 20px;
+}
+
+.nav_right {
+	float: right;
+}
+
+/* 选择器选择了所有的li了？？？会产生继承 */
+.nav_right>ul>li {
+	float: left;
+	line-height: 100px;
+}
+
+.nav_right>ul>li>a {
+	color: #000000;
+	font-size: 20px;
+	margin-left: 50px;
+}
+
+.nav_right>ul>li a:hover {
+	color: #ff6700;
+}
+
+.nav_right ul li:hover div {
+	display: block;
+}
+
+.nav_right_flag {
+	position: relative;
+}
+
+.money_list {
+	z-index: 999;
+	width: 150px;
+	height: 102px;
+	border: #E5E5E5 1px solid;
+	border-radius: 10px;
+	position: absolute;
+	top: 117px;
+	overflow: hidden;
+	padding: 5px 0px;
+	background-color: white;
+	display: none;
+}
+
+.money_list_ul {
+	text-align: center;
+}
+
+.money_list_ul li {
+	/* 因为继承  line-height 100px*/
+	line-height: 50px;
+}
+
+.money_list_ul li a {
+	display: block;
+	color: #000000;
+}
+
+.money_list_ul li a:hover {
+	background: #E5E5E5;
+}
+
+/* 网站导航 end */
+
+/* 网站内容start */
+
+/* 图片背景 */
+
+.all {
+	position: relative;
+	height: 640px;
+	background-image: url(../images/人背景.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* 背景图片的起始位置 */
+	background-position: center center;
+	padding: 1px;
+}
+
+.all>.containers>h1 {
+	color: white;
+	font-size: 59px;
+	font-weight: 300;
+	margin-top: 192px;
+	margin-left: 362px;
+}
+
+.all>.containers>a {
+	display: block;
+	color: white;
+	font-size: 25px;
+	font-weight: 300;
+	text-align: center;
+	width: 8em;
+	padding: 20px;
+	border-radius: 8px;
+	background-color: red;
+
+	margin-top: 35px;
+	margin-left: 478px;
+}
+
+.all_content {
+	width: 1200px;
+	height: 452px;
+	border: #E5E5E5 1px solid;
+	background-color: white;
+
+	position: absolute;
+	bottom: -400px;
+}
+
+/* 网站 金融 贷款  保险 */
+.all_content>ul>li{
+	width: 360px;
+	height: 420px;
+	/* border: #000000 1px solid; */
+	float:left;
+	margin: 19px;
+}
+.all_content>ul>li a{
+	0
+}
+.all_content_top{
+	/* 360*180 */
+	height: 180px;
+	background-image: url(../images/黄色背景.png);
+    background-repeat: no-repeat;
+}
+.h2_top,.h2_bottow{
+	font-size: 33px;
+	color: white;
+	padding-left: 20px;
+}
+.h2_top{
+	padding-top:50px ;
+	font-weight: 500;
+}
+.h2_bottow{
+	padding-top:0px ;
+	font-weight: 200;
+}
+.all_content_body{
+	/* 340*220 */
+	width: 340px;
+	height: 160px;
+	border-bottom: #000000 1px solid;
+	margin: 8px;
+}
+.all_content_body li{
+	font-size: 16px;
+	padding-top: 20px;
+	padding-left: 50px;
+	color: black;
+	font-weight: 300;
+}
+.all_content_body li span{
+	color: #FF6700;
+}
+.all_content h3{
+	color: #FF6700;
+	padding-top: 20px;
+	padding-left: 120px;
+	font-weight: 300;
+}
+
+.li2{
+	background-image: url(../images/蓝色背景.png);
+}
+.li3{
+	background-image:url(../images/绿色背景.png);
+}
+
+/* 网站内容end */
+footer{
+	height: 456px;
+}
+footer>.containers{
+	margin-top: 500px;
+	/* border: #000000 1px solid ; */
+}
+
+/* 网站脚start */
+.footer_logo{
+	float: left;
+}
+.footer_left{
+	float: left;
+	margin-left: 10px;
+	margin-top: 4px;
+	font-size: 14px;
+}
+.footer_left a{
+	color: #000000;
+}
+.footer_left span{
+	padding: 6px;
+}
+.footer_right{
+	float: right;
+}
+.footer_right p{
+	line-height: 29px;
+	font-weight: 200;
+}
+.footer_right_num{
+	color: red;
+	font-size: 30px;
+}
+
+
+/* 网站脚end */
